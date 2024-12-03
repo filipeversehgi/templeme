@@ -1,0 +1,27 @@
+{
+  "name": "temple-it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "pnpm build && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "change-case": "^5.4.4",
+    "commander": "^12.1.0",
+    "figlet": "^1.8.0",
+    "git-clone": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/git-clone": "^0.2.4",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
+  }
+}
