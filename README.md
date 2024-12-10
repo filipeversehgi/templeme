@@ -1,5 +1,5 @@
 <center>
-<img src="./docs/templeit.png" />
+<img src="docs/temple-it.png" />
 </center>
 
 # TempleIt
