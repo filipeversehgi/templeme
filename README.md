@@ -9,7 +9,7 @@ Create your code temples and share them!
 ## How to install
 
 ```bash
-npm i templeit -g
+npm i code-temple-it -g
 ```
 
 ## How to use
@@ -39,7 +39,7 @@ export MyTempleValueStore {
 ```
 
 ```
-Usage: templeit [options] <source> <destination> <name>
+Usage: temple-it [options] <source> <destination> <name>
 
 CLI for creating your code temples, base structures that should be repeated across the project
 

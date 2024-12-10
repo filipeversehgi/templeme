@@ -20,11 +20,11 @@ import { logger } from "./utils/logger";
 import { parseOpts } from "./utils/opts";
 
 const program = new Command();
-const templeItFolder = ".templeit";
+const templeItFolder = ".temple-it";
 
 program
   .version("0.0.1")
-  .name("templeit")
+  .name("temple-it")
   .description(
     "CLI for creating your code temples, base structures that should be repeated across the project"
   )
