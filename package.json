@@ -1,13 +1,15 @@
 {
   "name": "temple-it",
+  "description": "A CLI tool to generate project templates",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "build": "npx tsc",
-    "dev": "pnpm build && node dist/index.js",
+    "build": "NODE_OPTIONS='--loader ts-node/esm' webpack",
+    "dev": "rspack dev",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "templeit": "./dist/bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +22,15 @@
     "git-clone": "^0.2.0"
   },
   "devDependencies": {
+    "@rspack/cli": "^1.1.5",
+    "@rspack/core": "^1.1.5",
     "@types/git-clone": "^0.2.4",
     "@types/node": "^22.10.1",
-    "typescript": "^5.7.2"
+    "@types/webpack": "^5.28.5",
+    "ts-loader": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.4"
   }
 }

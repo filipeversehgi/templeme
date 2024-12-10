@@ -1,5 +1,5 @@
 <center>
-<img src="docs/temple-it.png" />
+<img src="docs/templeit.png" />
 </center>
 
 # TempleIt
@@ -8,17 +8,17 @@ Create your code temples and share them!
 ## How to install
 
 ```bash
-npm i temple-it -g
+npm i templeit -g
 ```
 
 ## How to use
 
-You need first to create your template directory and put it inside your project `.temple-it/templatename` folder.
+You need first to create your template directory and put it inside your project `.templeit/templatename` folder.
 
 So, for instance, let's create those two files:
 
 ```js
-//.temple-it/test/index.ts
+//.templeit/test/index.ts
 
 export MyTempleValueClass {
     echo() {
@@ -27,7 +27,7 @@ export MyTempleValueClass {
 }
 ```
 ```js
-//.temple-it/test/folder/index.ts
+//.templeit/test/folder/index.ts
 
 export MyTempleValueStore {
     echo() {
@@ -38,12 +38,12 @@ export MyTempleValueStore {
 
 
 ```
-Usage: temple-it [options] <source> <destination> <name>
+Usage: templeit [options] <source> <destination> <name>
 
 CLI for creating your code temples, base structures that should be repeated across the project
 
 Arguments:
-  source                 Name of your temple-it folder, file or git repository
+  source                 Name of your templeit folder, file or git repository
   destination            Destination folder, relative to current folder
   name                   Name of the resource created from the temple
 

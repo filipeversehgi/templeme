@@ -1,12 +1,19 @@
 {
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "sourceMap": true,
+    "lib": ["ES2021"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
     "compilerOptions": {
-      "rootDir": "src",
-      "outDir": "dist",
-      "strict": true,
-      "target": "ESNext",
-      "module": "ESNext",
-      "sourceMap": true,
-      "esModuleInterop": true,
-      "moduleResolution": "node"
+      "module": "CommonJS"
     }
-  }
+  },
+  "include": ["src/**/*"]
+}
