@@ -1,0 +1,7 @@
+.templeit
+.vscode
+build
+node_modules
+src
+tsconfig.json
+webpack.config.ts
