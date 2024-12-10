@@ -1,8 +1,9 @@
 <center>
-<img src="docs/templeit.png" />
+<img src="./docs/templeit.png" />
 </center>
 
 # TempleIt
+
 Create your code temples and share them!
 
 ## How to install
@@ -26,6 +27,7 @@ export MyTempleValueClass {
     }
 }
 ```
+
 ```js
 //.templeit/test/folder/index.ts
 
@@ -35,7 +37,6 @@ export MyTempleValueStore {
     }
 }
 ```
-
 
 ```
 Usage: templeit [options] <source> <destination> <name>
