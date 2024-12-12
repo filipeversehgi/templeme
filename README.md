@@ -1,6 +1,4 @@
-<center>
-<img src="docs/temple-it.png" />
-</center>
+![TempleIt Logo](docs/temple-it.png)
 
 # TempleIt
 
