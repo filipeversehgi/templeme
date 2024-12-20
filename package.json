@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_OPTIONS='--loader ts-node/esm' webpack",
-    "dev": "rspack dev",
+    "dev": "pnpm build && node dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {

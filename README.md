@@ -1,8 +1,25 @@
 ![TempleIt Logo](docs/temple-it.png)
 
-# TempleIt
+# Code Temple It!
 
-Create your code temples and share them!
+Create your code temples (base and sacred folder and file templates that you need to repeat across the entire project) and share them!
+
+```
+Usage: temple-it [options] [command]
+
+CLI for creating your code temples, base structures that should be repeated across the project
+
+Options:
+  -V, --version                                                            output the version number
+  -h, --help                                                               display help for command
+
+Commands:
+  init                                                                     Create a new temple-it folder
+  create [name]                                                            Create a new temple-it
+  list                                                                     Lists all available temples
+  copy [options] [templeName] [destination] [source] [destination] [name]
+  help [command]                                                           display help for command
+```
 
 ## How to install
 
@@ -12,43 +29,41 @@ npm i code-temple-it -g
 
 ## How to use
 
-You need first to create your template directory and put it inside your project `.templeit/templatename` folder.
+```bash
+# Initializes .temples folder in your project
+templeit init
 
-So, for instance, let's create those two files:
+# Create your first temple
+templeit create react-component
 
-```js
-//.templeit/test/index.ts
+# Create/Edit your files under .temple/react-component
+- placeholder-value.types.ts
+- placeholder-value.component.tsx
+- placeholder-value.module.css
 
-export MyTempleValueClass {
-    echo() {
-        console.log("My Temple Value here!")
-    }
-}
+# Replicate your temples into your project easily
+# Anywhere in your file name or contents that TempleIt finds "Placeholder Value", it will replace to "Button", keeping the casing
+templeit copy react-component src/components/ui/button
+- button.types.ts
+- button.component.tsx
+- button.module.css
 ```
 
-```js
-//.templeit/test/folder/index.ts
+Other useful commands are
 
-export MyTempleValueStore {
-    echo() {
-        console.log("temple-value content")
-    }
-}
-```
+```bash
+# Outputs available commands
+templeit help
 
-```
-Usage: temple-it [options] <source> <destination> <name>
+# Outputs command details
+templeit help init|create|list|copy
 
-CLI for creating your code temples, base structures that should be repeated across the project
+# Outputs to the terminal the new files instead of creating them
+templeit copy react-component src/components/ui/button --dry-run
 
-Arguments:
-  source                 Name of your templeit folder, file or git repository
-  destination            Destination folder, relative to current folder
-  name                   Name of the resource created from the temple
+# Copies only the subfolder of your Temple, instead of the entire code
+templeit copy react-component src/components/ui/button --f subfolder
 
-Options:
-  -V, --version          output the version number
-  -d, --dry-run          Dry run, do not create files, just show the output
-  -t, --template-string  String to be replace inside the temple file
-  -h, --help             display help for command
+# Copies the temple from a Github Repo and Subfolder
+templeit copy git@github.com:githubuser/githubrepo.git src/components/ui/button --f subfolder
 ```

@@ -70,3 +70,13 @@ export const cloneFile = (
     flag: "w",
   });
 };
+
+export const createFolder = (folder: string) => {
+  if (!existsSync(folder)) {
+    mkdirSync(folder, { recursive: true });
+  }
+};
+
+export const getAllDirectFiles = (folder: string) => {
+  return readdirSync(folder);
+};

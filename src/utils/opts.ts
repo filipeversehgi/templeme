@@ -19,3 +19,10 @@ export const parseOpts = (options: Record<string, string>, args: string[]) => {
     folder,
   };
 };
+
+export const ROOT_TEMPLE_DIR = ".temples";
+
+export const PLACEHOLDER_VALUE = "placeholder-value";
+
+export const getTempleDirectory = (templateString: string) =>
+  `${ROOT_TEMPLE_DIR}/${templateString}`;
