@@ -1,7 +1,4 @@
 {
-    "cSpell.words": [
-        "rspack",
-        "templeit"
-    ],
-    "editor.formatOnSave": true
+  "cSpell.words": ["rspack", "templeme", "templeme"],
+  "editor.formatOnSave": true
 }

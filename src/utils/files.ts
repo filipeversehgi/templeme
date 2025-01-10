@@ -10,7 +10,7 @@ import {
 import { dirname, join } from "path";
 import { logger } from "./logger";
 
-export const templeItExists = (path: string) => {
+export const templeMeExists = (path: string) => {
   const exists = existsSync(path);
   if (!exists) {
     logger.error(`Template not found under ${path} path`);

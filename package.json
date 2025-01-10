@@ -1,5 +1,5 @@
 {
-  "name": "code-temple-it",
+  "name": "templeme",
   "description": "A CLI tool to generate code structure templates",
   "version": "0.0.3",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "temple-it": "./dist/bundle.js"
+    "templeme": "./dist/bundle.js"
   },
   "keywords": [],
   "author": "",

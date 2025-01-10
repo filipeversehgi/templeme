@@ -20,7 +20,7 @@ export const parseOpts = (options: Record<string, string>, args: string[]) => {
   };
 };
 
-export const ROOT_TEMPLE_DIR = ".temples";
+export const ROOT_TEMPLE_DIR = ".templeme";
 
 export const PLACEHOLDER_VALUE = "placeholder-value";
 

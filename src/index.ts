@@ -5,21 +5,21 @@ const program = new Command();
 
 program
   .version("0.0.1")
-  .name("temple-it")
+  .name("templeme")
   .description(
     "CLI for creating your code temples, base structures that should be repeated across the project"
   );
 
 program
   .command("init")
-  .description("Create a new temple-it folder")
+  .description("Create a new templeme folder")
   .action(() => {
     commands.init();
   });
 
 program
   .command("create [name]")
-  .description("Create a new temple-it")
+  .description("Create a new templeme")
   .action((templeName: string) => {
     commands.create(templeName);
   });
@@ -40,7 +40,7 @@ program
   )
 
   .option("-f, --folder", "Subfolder inside template folder", "")
-  .argument("[source]", "Name of your templeit folder, file or git repository")
+  .argument("[source]", "Name of your templeme folder, file or git repository")
   .argument("[destination]", "Destination folder, relative to current folder")
   .argument("[name]", "Name of the resource created from the temple")
   .action((templeName, destination, opts) => {
