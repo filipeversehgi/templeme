@@ -23,7 +23,7 @@ Commands:
 
 ## See it in action
 
-https://github.com/user-attachments/assets/f1a8fb86-5e2b-4ab7-b483-5b71d2442c97
+https://github.com/user-attachments/assets/acd3d850-8617-40c8-af14-a4c1971bedd9
 
 ## How to install
 
