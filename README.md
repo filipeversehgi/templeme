@@ -21,6 +21,10 @@ Commands:
   help [command]                                display help for command
 ```
 
+## See it in action
+
+https://github.com/user-attachments/assets/f1a8fb86-5e2b-4ab7-b483-5b71d2442c97
+
 ## How to install
 
 ```bash
