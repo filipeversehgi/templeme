@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/filipeversehgi/templeme" target="blank"><img src="https://github.com/filipeversehgi/templeme/blob/main/docs/templeme-logo.png?raw=true" width="120" alt="TempleMe Logo" /></a>
+  <a href="https://github.com/filipeversehgi/templeme" target="blank"><img src="https://raw.githubusercontent.com/filipeversehgi/templeme/main/docs/templeme-logo.svg" width="160" alt="TempleMe Logo" /></a>
 </p>
 
 # TempleMe

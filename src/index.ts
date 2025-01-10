@@ -38,7 +38,6 @@ program
     "Dry run, do not create files, just show the output",
     false
   )
-
   .option("-f, --folder", "Subfolder inside template folder", "")
   .argument("[source]", "Name of your templeme folder, file or git repository")
   .argument("[destination]", "Destination folder, relative to current folder")
