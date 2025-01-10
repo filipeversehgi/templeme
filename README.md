@@ -7,20 +7,18 @@
 Create your code temples (base and sacred folder and file templates that you need to repeat across the entire project) and share them!
 
 ```
-Usage: templeme [options] [command]
-
 CLI for creating your code temples, base structures that should be repeated across the project
 
 Options:
-  -V, --version                                                            output the version number
-  -h, --help                                                               display help for command
+  -V, --version                                 output the version number
+  -h, --help                                    display help for command
 
 Commands:
-  init                                                                     Create a new templeme folder
-  create [name]                                                            Create a new templeme
-  list                                                                     Lists all available temples
-  copy [options] [templeName] [destination] [source] [destination] [name]
-  help [command]                                                           display help for command
+  init                                          Create a new templeme folder
+  create [name]                                 Create a new templeme
+  list                                          Lists all available temples
+  copy [options] [source] [destination] [name]
+  help [command]                                display help for command
 ```
 
 ## How to install
