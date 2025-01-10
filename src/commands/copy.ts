@@ -84,7 +84,6 @@ export const copy = (
   for (const file of templateFiles) {
     const relativePath = file.replace(templateFolder, ".");
     const destinationPath = join(destination, relativePath);
-    console.log({ destinationPath, destination, relativePath });
     cloneFile(file, destinationPath, replaceMap, !!dryRun);
   }
 
