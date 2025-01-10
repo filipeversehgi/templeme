@@ -1,8 +1,12 @@
 {
   "name": "templeme",
   "description": "A CLI tool to generate code structure templates",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filipeversehgi/templeme"
+  },
   "scripts": {
     "build": "NODE_OPTIONS='--loader ts-node/esm' webpack",
     "dev": "pnpm build && node dist/bundle.js",
