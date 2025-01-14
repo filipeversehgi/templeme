@@ -38,12 +38,17 @@ program
     "Dry run, do not create files, just show the output",
     false
   )
+  .option(
+    "-c, --content-only",
+    "Content only, do not create the base template folder, only it's contents",
+    false
+  )
   .option("-f, --folder", "Subfolder inside template folder", "")
   .argument("[source]", "Name of your templeme folder, file or git repository")
   .argument("[destination]", "Destination folder, relative to current folder")
   .argument("[name]", "Name of the resource created from the temple")
-  .action((templeName, destination, opts) => {
-    commands.copy(templeName, destination, opts);
+  .action((templeName, destination, name, opts) => {
+    commands.copy(templeName, destination, name, opts);
   });
 
 program.parse();

@@ -1,7 +1,7 @@
 {
   "name": "templeme",
   "description": "A CLI tool to generate code structure templates",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "repository": {
     "type": "git",

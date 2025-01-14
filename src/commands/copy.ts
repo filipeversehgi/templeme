@@ -22,14 +22,19 @@ export const copy = (
   source: string,
   destinationFolder: string,
   name: string,
-  { folder, dryRun }: { folder: string; dryRun: boolean } = {
+  {
+    folder,
+    dryRun,
+    contentOnly,
+  }: { folder: string; dryRun: boolean; contentOnly: boolean } = {
     dryRun: false,
     folder: "",
+    contentOnly: false,
   }
 ) => {
   _validateInput(source, destinationFolder, name);
 
-  const destination = join(destinationFolder, name);
+  const destination = join(destinationFolder, contentOnly ? "" : name);
 
   const makeCaseDict = (value: string) => ({
     camel: camelCase(value),
